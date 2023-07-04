@@ -135,7 +135,6 @@ div{
     height: 10%;
     width: 100%;
     left: 0;
-    
     position: absolute;
     background-size: contain;
     background-position: center;
@@ -143,7 +142,7 @@ div{
 .h1{
     color: #cbcbcb;
 }
-.body{
+*{
     padding: o;
     margin: 0;
     box-sizing: border-box;
@@ -151,12 +150,12 @@ div{
 }
 section{
     color: black;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: grid;
     place-items: center;
 }
-.service{
+.row{
     display: flex;
     flex-wrap: wrap;
 }
@@ -185,7 +184,7 @@ h3{
     color: #1f194c;
     margin: 1em 0;
 }
-.taxes{
+.Taxes{
     color: black;
 }
 p{
@@ -196,6 +195,31 @@ p{
 
 }
 .card:hover{
-    background-position: 0 100%;
-    
+    background-position: 0 100%;   
+}
+.card:hover h3{
+    color: #ffffff;
+}.card:hover p{
+    color: #f0f0f0;
+}
+/*.Taxes > .service{
+    background-position: center;
+}*/
+@media screen and (min-width: 768px) {  
+section{
+    padding: 0 2em;
+}    
+.column{
+    flex: 0 50%;
+    max-width: 50%;
+ }
+}
+@media screen and (min-width: 992px){
+    section{
+        padding: 1em 3em;
+}
+.column{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
 }
