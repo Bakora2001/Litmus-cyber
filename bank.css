@@ -6,22 +6,45 @@
 h1{
     margin-top: 40px;
     margin-left: 30px;
-    background-color: white;
+    background-color: #FAF9F6;
 }
 body{
-    background-color: white;
+    background-color: #FAF9F6;
 
 }
 .nav-bar{
-    background-color: orange;
+    background-color: black;
     text-align: center;
 }
 .nav-bar ul{
     display: inline-flex;
     list-style: none;
-    color: white;
+    color: #FAF9F6;
 }
 .nav-bar ul li{
     width: 180px;
+    margin: 15px;
+    padding: 15px;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: #FAF9F6;
+}
+.none, .nav-bar ul li:hover{
+    background: red;
+    border-radius: 3px;
+}
+.sub-nav-1{
+    display: none;    
+}
+.nav-bar ul li:hover .sub-nav-1{
+    display: block;
+    position: absolute;
+    background-color: red;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.nav-bar ul li:hover .sub-nav-1 ul{
+    display: block;
     margin: 15px;
 }
