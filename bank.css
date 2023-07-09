@@ -1,225 +1,27 @@
-/* Common styles*/
-body{
-    
-    background-color: #cbcbcb;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0px;
-    font-family: 'Roboto' , sans-serif;
- 
-}
-div{
-    color: royalblue;
-}
-.left-column > .contact-hours-wrapper{
-    color: #cbcbcb;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-}
-.address-wrapper{
-    color: #cbcbcb;
-}
-/* Common nav styles*/
-.navigation-wrapper{
-    height: 120px;
-    background-color: #11122b;
-    color: #cbcbcb;
-    /* Making a Flex box you use the code below: It arranges the Div in order of the code from the top downwards*/
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    /*creating a padding covers the nav bard to fit the screen*/
-    padding: 60x 100px;
-}
-
-/*left-column styles*/
-.navigation-wrapper > .left-column{
-    display: flex;
-    align-items: center;
-    color: whitesmoke;
-}
-.hours{
-    color: #cbcbcb;
-}
-.phone{
-    color: #cbcbcb;
-}
-.links-wrapper > .nav-link a{
-    font-family: 'Roboto' , sans-serif;
-    color: whitesmoke;
-}
-/*center-column styles*/
-.navigation-wrapper > .center-column{
-     display: grid;
-     grid-template-columns: 1fr;
-     grid-gap: 42px;
-     width: 500px;
-
-}
-.links-wrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.links-wrapper > .nav-link a{
-      font-family: "Ubuntu Condensed", sans-serif;
-      color: #cbcbcb;
-      text-decoration: none;
-      transition: 0.5s;
-}
-.links-wrapper > .nav-link a:hover{
-      color: #cea135;
-      letter-spacing: 2px;
-}
-.links-wrapper > .nav-link{
-    width: 70px;
-    text-align: center;
-}
-/*right-column styles*/
-.links-wrapper > .right-column{
-    display: flex;
-    align-items: center;
-    text-align: right;
-}
-.navigation-wrapper > .right-column > .address-wrapper a{
-    color: #858585;
-    text-decoration: none;
-    font-size: 0.9em;
-    transition: 0.5s;
-}
-.navigation-wrapper > .right-column > .address-wrapper a:hover{
-    color: #cea135;
-    text-decoration: none;
-    font-size: 0.9em;
-    transition: 0.5s;
-}
-.navigation-wrapper > .left-column > .contact-hours-wrapper > .hours{
-    font-family: 'Ubuntu Condensed', sans-serif;
-    color: #858585;
-    text-decoration: none;
-    font-size: 0.8em;
-}
-.navigation-wrapper > .left-column > .contact-hours-wrapper > .phone{
-    font-family: 'Ubuntu Condensed', sans-serif;
-  
-    text-decoration: none;
-    font-size: 0.8em;
-}
-/*.navigation-wrapper > .center-column > .banner-image{
-   display: flex;
-   justify-content: center;
-   width: 20px;
-   height: 20px;
-}*/
-
-/*How to center an image in css*/
-.litmus{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: auto;
-    border: 1px solid black;
-    background: url(13.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-.google-map{
-    padding-bottom: 50%;
-    position: relative;
-}
-.google-map> iframe{
-    position: relative;
-    height: 10%;
-    width: 100%;
-    left: 0;
-    position: absolute;
-    background-size: contain;
-    background-position: center;
-}
-.h1{
-    color: #cbcbcb;
-}
 *{
-    padding: o;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
 }
-section{
-    color: black;
-    height: 100%;
-    width: 100%;
-    display: grid;
-    place-items: center;
+h1{
+    margin-top: 40px;
+    margin-left: 30px;
+    background-color: white;
 }
-.row{
-    display: flex;
-    flex-wrap: wrap;
-}
-.column{
-    width: 100%;
-    border: 1px solid orange;
-    padding: 0 1em 1em 1em;
-    text-align: center;
-}
-.card{
-    border: 1px solid black;
-    width: 100%;
-    height: 100%;
-    padding: 2em 1.5em;
-    background: linear-gradient(#ffffff 50%, #2c7bf3 50%);
-    background-size: 100% 200%;
-    background-position: 0 2.5%;
-    border-radius: 5px;
-    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
-    cursor: pointer;
-    transition: 0.5s;
-}
-h3{
-    font-size: 20px;
-    font-weight: 600;
-    color: #1f194c;
-    margin: 1em 0;
-}
-.Taxes{
-    color: black;
-}
-p{
-    color: #57a7b5;
-    font-size: 15px;
-    line-height: 1.6;
-    letter-spacing: 0.03em;
+body{
+    background-color: white;
 
 }
-.card:hover{
-    background-position: 0 100%;   
+.nav-bar{
+    background-color: orange;
+    text-align: center;
 }
-.card:hover h3{
-    color: #ffffff;
-}.card:hover p{
-    color: #f0f0f0;
+.nav-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
 }
-/*.Taxes > .service{
-    background-position: center;
-}*/
-@media screen and (min-width: 768px) {  
-section{
-    padding: 0 2em;
-}    
-.column{
-    flex: 0 50%;
-    max-width: 50%;
- }
-}
-@media screen and (min-width: 992px){
-    section{
-        padding: 1em 3em;
-}
-.column{
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-}
+.nav-bar ul li{
+    width: 180px;
+    margin: 15px;
 }
