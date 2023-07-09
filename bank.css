@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 h1{
-    margin-top: 40px;
+    margin-top: 25px;
     margin-left: 30px;
     background-color: #FAF9F6;
 }
@@ -15,6 +15,7 @@ body{
 .nav-bar{
     background-color: black;
     text-align: center;
+    margin-bottom: 3px;
 }
 .nav-bar ul{
     display: inline-flex;
@@ -22,7 +23,7 @@ body{
     color: #FAF9F6;
 }
 .nav-bar ul li{
-    width: 180px;
+    width: 150px;
     margin: 15px;
     padding: 15px;
 }
@@ -30,10 +31,11 @@ body{
     text-decoration: none;
     color: #FAF9F6;
 }
-.none, .nav-bar ul li:hover{
+.one, .nav-bar ul li:hover{
     background: red;
     border-radius: 3px;
 }
+/*Where styling of sub nav bar 1 begins*/
 .sub-nav-1{
     display: none;    
 }
@@ -42,22 +44,103 @@ body{
     position: absolute;
     background-color: red;
     margin-top: 15px;
-    margin-left: -60px;
-    margin-right: 40px;
-
+    margin-left: -15px;
 }
 .nav-bar ul li:hover .sub-nav-1 ul{
     display: block;
     margin: 15px;
     text-align: left;
-    transition: 1s;
 }
 .nav-bar ul li:hover .sub-nav-1 ul li{
     width:180px;
-    padding: 10px;
+    padding: 3px;
     border-bottom: 1px dotted black;
     background: transparent;
     border-radius: 0;
     text-align: left;
-    transition: 1s;
+}
+/*Where styling of sub nav bar 2 begins*/
+.sub-nav-2{
+    display: none;    
+}
+.nav-bar ul li:hover .sub-nav-2{
+    display: block;
+    position: absolute;
+    background-color: red;
+    margin-top: 15px;
+    margin-left: -15px;
+
+}
+.nav-bar ul li:hover .sub-nav-2 ul{
+    display: block;
+    margin: 15px;
+    text-align: left;
+}
+.nav-bar ul li:hover .sub-nav-2 ul li{
+    width:180px;
+    padding: 3px;
+    border-bottom: 1px dotted black;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+/*Where styling of sub nav bar 3 begins*/
+.sub-nav-3{
+    display: none;    
+}
+.nav-bar ul li:hover .sub-nav-3{
+    display: block;
+    position: absolute;
+    background-color: red;
+    margin-top: 3px;
+    margin-left: -15px;
+
+}
+.nav-bar ul li:hover .sub-nav-3 ul{
+    display: block;
+    margin: 15px;
+    text-align: left;
+    margin-bottom: 0;
+}
+.nav-bar ul li:hover .sub-nav-3 ul li{
+    width:180px;
+    padding: 0px;
+    border-bottom: 1px dotted black;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+/*Where styling of sub nav bar 4 begins*/
+.sub-nav-4{
+    display: none;    
+}
+.nav-bar ul li:hover .sub-nav-4{
+    display: block;
+    position: absolute;
+    background-color: red;
+    margin-top: 15px;
+    margin-left: -15px;
+
+}
+.nav-bar ul li:hover .sub-nav-4 ul{
+    display: block;
+    margin: 15px;
+    text-align: left;
+}
+.nav-bar ul li:hover .sub-nav-4 ul li{
+    width:180px;
+    padding: 1px;
+    border-bottom: 1px dotted black;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.image{
+    height: 500px;
+    border:  2px red;
+    object-fit: cover;
+    background: url('13.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
