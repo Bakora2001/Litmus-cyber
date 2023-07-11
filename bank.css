@@ -8,6 +8,10 @@ h1{
     margin-left: 30px;
     background-color: #FAF9F6;
 }
+h1:hover{
+    color: red;
+    transition: 0.2s;
+}
 body{
     background-color: #FAF9F6;
 
@@ -136,11 +140,24 @@ body{
     text-align: left;
 }
 .image{
-    height: 500px;
+    height: 800px;
     border:  2px red;
     object-fit: cover;
     background: url('13.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.image-1{
+    width: 700px;
+    height: 800px;
+    background-position: center;
+}
+.features-section{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
 }
