@@ -172,7 +172,7 @@ img{
 .features-section{
     height:400px;
     width: 100%;
-    background-image: url(25.jpg);
+    background-image: url(24.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
@@ -198,7 +198,6 @@ img{
     height: 500px;
     width: 100%;
     border-top: 10px solid red;
-    border-bottom: 10px solid red;
     left: 0;
     top: 5px;
     position: absolute;
@@ -208,4 +207,10 @@ img{
     padding: 20px;
     margin: 42px;
     text-align: center; 
+    border-radius: 10px;
+    transition: 1s;
+}
+.features-section > .columns-wrapper > .column:hover{
+    color: orange;
+    border-bottom: 5px solid #11122b;
 }
