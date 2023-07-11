@@ -140,8 +140,11 @@ body{
     text-align: left;
 }
 .image{
+    padding: 0;
+    margin: 0;
+}
+.image{
     height: 800px;
-    border:  2px red;
     object-fit: cover;
     background: url('13.jpeg');
     background-repeat: no-repeat;
@@ -153,6 +156,11 @@ img{
     max-height: 100%;
 }
 .image-1{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0%;
+}
+.image-1{
     width: 700px;
     height: 800px;
     background-position: center;
@@ -161,3 +169,20 @@ img{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: large;
 }
+.features-section{
+    height:400px;
+    background-image: url(24.jpg);
+    background-color: black;
+    border-top: 10px solid white;  
+    color: #11122b;
+    display: flex;
+    justify-content: center;
+    align-items: Center;
+    font-family: "Ubuntu-Condensed", sans-serif;
+}
+.features-section > .columns-wrapper {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;   
+}
+.google
