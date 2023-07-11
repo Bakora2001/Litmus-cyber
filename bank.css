@@ -171,6 +171,7 @@ img{
 }
 .features-section{
     height:400px;
+    width: 100%;
     background-image: url(24.jpg);
     background-color: black;
     border-top: 10px solid white;  
@@ -185,4 +186,16 @@ img{
     display: flex;
     justify-content: space-between;   
 }
-.google
+.google-map{
+    padding-bottom: 50%;
+    position: relative;
+}
+.google-map iframe{
+    margin-left: 0;
+    padding: 0;
+    height: 500px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
