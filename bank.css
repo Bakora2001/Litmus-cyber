@@ -172,7 +172,9 @@ img{
 .features-section{
     height:400px;
     width: 100%;
-    background-image: url(24.jpg);
+    background-image: url(25.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: black;
     border-top: 10px solid white;  
     color: #11122b;
@@ -195,7 +197,15 @@ img{
     padding: 0;
     height: 500px;
     width: 100%;
+    border-top: 10px solid red;
+    border-bottom: 10px solid red;
     left: 0;
-    top: 0;
+    top: 5px;
     position: absolute;
+    background-size: cover;
+}
+.features-section > .columns-wrapper > .column{
+    padding: 20px;
+    margin: 42px;
+    text-align: center; 
 }
